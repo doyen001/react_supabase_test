@@ -9,15 +9,11 @@ export default function App() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    console.log("test123");
-    navigate("/auth");
     // supabase.auth.getSession().then(({ data }) => setSession(data.session));
-
     // const { data: sub } = supabase.auth.onAuthStateChange((_event, sess) => {
     //   setSession(sess);
     //   navigate("/auth");
     // });
-
     // return () => sub.subscription.unsubscribe();
   }, [navigate]);
 
