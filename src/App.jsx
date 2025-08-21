@@ -21,11 +21,5 @@ export default function App() {
     // return () => sub.subscription.unsubscribe();
   }, [navigate]);
 
-  return (
-    <Routes>
-      <Route path="/auth" element={<AuthPage />} />
-      <Route path="/dashboard" element={<Dashboard session={session} />} />
-      <Route path="*" element={<AuthPage />} />
-    </Routes>
-  );
+  return <AuthPage />;
 }
